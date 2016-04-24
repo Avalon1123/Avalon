@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+             <!--  透明-->
+    <color name="transparent">#00000000</color>
+    <color name="black_text">#333333</color>
+    <color name="gray_text">#a0a1a1</color>
+    <color name="dialogbg">#37000000</color>
+        <color name="bg">#80000000</color>
+</resources>

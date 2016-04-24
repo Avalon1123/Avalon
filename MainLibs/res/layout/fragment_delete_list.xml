@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_refresh"
+        android:layout_above="@+id/delete"
+        android:layout_marginBottom="1px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.librariy.view.LoadMoreListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:divider="#dfdbda"
+            android:dividerHeight="1px"
+            android:listSelector="#00000000"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.librariy.view.EmptyView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <com.librariy.view.DeleteView 
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/delete"
+        ></com.librariy.view.DeleteView>
+    <View 
+        android:layout_above="@id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e5e5e5"
+        />
+</RelativeLayout>
